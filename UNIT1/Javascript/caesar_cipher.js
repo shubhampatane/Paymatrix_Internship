@@ -9,9 +9,8 @@ var dict = {
 };
 
 function rot13(enc) {
-  var codeArr = enc.split("");  // String to Array
-  var dec = []; // Your Result goes here
-  // Only change code below this line
+  var codeArr = enc.split(""); 
+  var dec = []; 
 
   dec = codeArr.map(function(letter) {
     if(dict.hasOwnProperty(letter)) {
@@ -19,7 +18,5 @@ function rot13(enc) {
     }
     return letter;
   });
-
-  // Only change code above this line
-  return dec.join(""); // Array to String
+  return dec.join("");
 }
