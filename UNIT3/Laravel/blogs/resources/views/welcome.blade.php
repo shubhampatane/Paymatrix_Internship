@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                   Route to /hello
                 </div>
 
                 <div class="links">
