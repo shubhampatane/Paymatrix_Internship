@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/hello', function(){
-    $variable = "Shubham";
-    return view('sub_views.hello',[
-        'somedata' => $variable,
-    ]);
-});
+Route::get('/hello','HelloController@something');
+Route::get('/apli','AppController@index');
+Route::get('/about','AppController@about');
+Route::get('/services','AppController@servies');
